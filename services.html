@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - CreativeSync Portal{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Discover what we can do for you</p>
+    </div>
+</section>
+
+<section class="services-content">
+    <div class="container">
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom web applications built with modern technologies to meet your specific business needs.</p>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Frontend Development</li>
+                    <li>Backend Development</li>
+                    <li>API Integration</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Development</h3>
+                <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                <ul>
+                    <li>iOS Development</li>
+                    <li>Android Development</li>
+                    <li>Cross-Platform Solutions</li>
+                    <li>App Maintenance</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful and intuitive designs that enhance user engagement and satisfaction.</p>
+                <ul>
+                    <li>User Research</li>
+                    <li>Wireframing</li>
+                    <li>Prototyping</li>
+                    <li>Visual Design</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Strategic marketing solutions to increase your online presence and drive growth.</p>
+                <ul>
+                    <li>SEO Optimization</li>
+                    <li>Content Marketing</li>
+                    <li>Social Media Marketing</li>
+                    <li>PPC Advertising</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Solutions</h3>
+                <p>Scalable and secure cloud infrastructure to support your business operations.</p>
+                <ul>
+                    <li>Cloud Migration</li>
+                    <li>Cloud Architecture</li>
+                    <li>DevOps Implementation</li>
+                    <li>Cloud Security</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cybersecurity</h3>
+                <p>Comprehensive security solutions to protect your digital assets from threats.</p>
+                <ul>
+                    <li>Security Audits</li>
+                    <li>Vulnerability Assessment</li>
+                    <li>Security Training</li>
+                    <li>Incident Response</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to get started?</h2>
+            <p>Contact us today to discuss how we can help your business grow.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

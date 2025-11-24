@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Home - CreativeSync Portal{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to CreativeSync Portal</h1>
+        <p>Syncing Ideas. Shaping Experiences.</p>
+        <div class="cta-buttons">
+            <a href="{{ url_for('about') }}" class="btn btn-primary">Learn More</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Our Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Fast Performance</h3>
+                <p>Lightweight and optimized for speed, ensuring a smooth user experience.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Adapts seamlessly to different screen sizes for optimal viewing on any device.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure</h3>
+                <p>Built with security best practices to protect your data and privacy.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>User Friendly</h3>
+                <p>Intuitive interface designed with the user experience in mind.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-preview">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Our Website</h2>
+                <p>CreativeSync Portal is a modern, multi purpose web platform designed to bring creativity, information, and innovation together in one place. Our website showcases a seamless blend of elegant design and intuitive navigation, offering users an engaging digital experience.</p>
+                <a href="{{ url_for('about') }}" class="btn btn-outline">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/about-preview.jpg') }}" alt="About Us">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

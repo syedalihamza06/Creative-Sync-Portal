@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - CreativeSync Portal{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Learn more about our mission and team</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>CreativeSync Portal is a modern, multi purpose web platform designed to bring creativity, information, and innovation together in one place. Our website showcases a seamless blend of elegant design and intuitive navigation, offering users an engaging digital experience.
+                Whether you're exploring our services, browsing the gallery, or connecting with us through our interactive forms, CreativeSync Portal ensures a smooth and visually appealing journey across all pages. Built with passion and precision, our goal is to inspire users through creativity, simplicity, and smart web design.</p>
+            <p>At CreativeSync Portal, we believe that every interaction should feel meaningful and intuitive. That’s why we focus on crafting pages that not only look stunning but also function with clarity and purpose. From dynamic visuals to user friendly layouts, every element is thoughtfully designed to enhance your browsing experience. As we continue to grow, our mission remains the same: to deliver a digital space where creativity and innovation come together seamlessly, empowering users to explore, learn, and connect with ease.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>Our mission at CreativeSync Portal is to empower individuals and creators through a platform that blends design, technology, and innovation. We aim to deliver an online experience that is visually inspiring, easy to navigate, and rich with meaningful content. By harmonizing creativity with functionality, we strive to help users explore new ideas, discover useful resources, and connect with digital experiences that truly resonate.</p>
+        </div>
+
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Lead Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Team Member 3">
+                    <h3>Mike Johnson</h3>
+                    <p>UI/UX Designer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='images/team4.jpg') }}" alt="Team Member 4">
+                    <h3>Sarah Williams</h3>
+                    <p>Marketing Manager</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

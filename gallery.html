@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - CreativeSync Portal{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Explore our collection of images</p>
+    </div>
+</section>
+
+<section class="gallery-content">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="Gallery Image 1">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Tech Modern Workspace</h3>
+                        <p>Workspace</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="Gallery Image 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Digital Innovation Concept</h3>
+                        <p>Innovation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery3.jpg') }}" alt="Gallery Image 3">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Coding Screen Laptop</h3>
+                        <p>Coding</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery4.jpg') }}" alt="Gallery Image 4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Software Development Team</h3>
+                        <p>Software</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery5.jpg') }}" alt="Gallery Image 5">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Digital Data Cloud</h3>
+                        <p>Cloud</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery6.jpg') }}" alt="Gallery Image 6">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Machine Learning Concept</h3>
+                        <p>Learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery7.jpg') }}" alt="Gallery Image 7">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Neural Network Visualization</h3>
+                        <p>Network</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery8.jpg') }}" alt="Gallery Image 8">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Cybersecurity lock Digital</h3>
+                        <p>Cybersecurity</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery9.jpg') }}" alt="Gallery Image 9">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>Hacking Screen Matrix</h3>
+                        <p>Hacking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
